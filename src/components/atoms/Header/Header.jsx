@@ -1,13 +1,12 @@
-import { Link } from 'react-router-dom';
-
-import { HeaderWrapper, Nav } from './styled';
+import {HeaderButtonLink, HeaderWrapper, Nav} from './styled';
 
 const Header = () => {
   return (
     <HeaderWrapper>
-      Header
       <Nav>
-        <Link to="/">Home</Link>
+        <HeaderButtonLink href="/">Home</HeaderButtonLink>
+        <HeaderButtonLink href="/projects">Projects</HeaderButtonLink>
+        <HeaderButtonLink href="/info">Info</HeaderButtonLink>
       </Nav>
     </HeaderWrapper>
   )
